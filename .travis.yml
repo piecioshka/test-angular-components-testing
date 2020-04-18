@@ -1,0 +1,16 @@
+language: node_js
+
+os:
+  - linux
+
+node_js:
+  - "13"
+  - "12"
+  # - "11" unsupported by Angular CLI v9
+  - "10"
+
+addons:
+  chrome: stable
+
+script:
+  - npm run test

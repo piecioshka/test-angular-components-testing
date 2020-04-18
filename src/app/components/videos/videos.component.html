@@ -1,0 +1,6 @@
+<div class="video card my-4" style="width: 18rem;" *ngFor="let video of videos$ | async">
+  <img [src]="video.thumbUrl" class="card-img-top" alt="" />
+  <div class="card-body">
+    <h5 class="card-title">{{ video.title }}</h5>
+  </div>
+</div>
