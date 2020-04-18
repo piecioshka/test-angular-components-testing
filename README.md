@@ -1,6 +1,6 @@
 # test-angular-components-testing
 
-[![travis](https://img.shields.io/travis/piecioshka/test-angular-components-testing.svg)](https://travis-ci.org/piecioshka/test-angular-components-testing)
+[![workflow](https://img.shields.io/github/workflow/status/piecioshka/test-angular-components-testing/Testing)](https://github.com/piecioshka/test-angular-components-testing/actions?query=workflow%3A%22Testing%22)
 
 📒 Testing Angular components
 
@@ -14,9 +14,9 @@
 * [Use Spy][2]
 * [Use Stub][3]
 
-[1]: https://github.com/piecioshka/test-angular-components-testing/blob/master/src/app/videos/videos.component.spec.ts#L39
-[2]: https://github.com/piecioshka/test-angular-components-testing/blob/master/src/app/videos/videos.component.spec.ts#L45
-[3]: https://github.com/piecioshka/test-angular-components-testing/blob/master/src/app/videos/videos.component.spec.ts#L52
+[1]: https://github.com/piecioshka/test-angular-components-testing/blob/master/src/app/components/videos/videos.component.spec.ts#L39
+[2]: https://github.com/piecioshka/test-angular-components-testing/blob/master/src/app/components/videos/videos.component.spec.ts#L45
+[3]: https://github.com/piecioshka/test-angular-components-testing/blob/master/src/app/components/videos/videos.component.spec.ts#L52
 
 ## License
 
