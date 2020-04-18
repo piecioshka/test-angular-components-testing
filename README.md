@@ -1,6 +1,6 @@
 # test-angular-components-testing
 
-[![workflow](https://img.shields.io/github/workflow/status/piecioshka/test-angular-components-testing/Testing)](https://github.com/piecioshka/test-angular-components-testing/actions?query=workflow%3A%22Testing%22)
+![Testing](https://github.com/piecioshka/test-angular-components-testing/workflows/Testing/badge.svg?branch=master)
 
 📒 Testing Angular components
 
