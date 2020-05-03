@@ -1,0 +1,17 @@
+<app-videos-search (onSearch)="onSearch($event)"></app-videos-search>
+
+<ng-container *ngIf="displayVideos$ | async as videos">
+
+  <div class="video-list" class="row">
+    <app-video
+      class="video col-xs-12 col-md-4 mb-3"
+      *ngFor="let video of videos"
+      [video]="video"
+    ></app-video>
+  </div>
+
+  <p *ngIf="videos.length === 0" class="alert alert-warning">
+    A list is empty. Sorry my friend.
+  </p>
+
+</ng-container>

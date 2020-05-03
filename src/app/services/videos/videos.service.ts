@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 
-import { VideoList } from 'src/app/interfaces/videos.interface';
+import { VideoList } from 'src/app/interfaces/video-list.interface';
 import { environment } from 'src/environments/environment';
 
 @Injectable({

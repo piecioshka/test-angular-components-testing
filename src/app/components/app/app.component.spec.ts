@@ -1,8 +1,11 @@
 import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { VideosComponent } from 'src/app/components/videos/videos.component';
+import { VideoListComponent } from 'src/app/components/video-list/video-list.component';
+import { VideosSearchComponent } from 'src/app/components/videos-search/videos-search.component';
+import { VideoComponent } from 'src/app/components/video/video.component';
 
 describe('AppComponent', () => {
   let component: AppComponent;
@@ -10,8 +13,13 @@ describe('AppComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [AppComponent, VideosComponent],
-      imports: [HttpClientTestingModule],
+      declarations: [
+        AppComponent,
+        VideoListComponent,
+        VideoComponent,
+        VideosSearchComponent,
+      ],
+      imports: [HttpClientTestingModule, FormsModule],
     }).compileComponents();
   }));
 

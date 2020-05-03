@@ -6,7 +6,7 @@ import {
 
 import { VideosService } from './videos.service';
 import { environment } from 'src/environments/environment';
-import VIDEOS_FIXTURE from '../../../fixtures/videos.fixture.json';
+import DUMMY_VIDEOS from 'src/dummies/videos.dummy.json';
 
 describe('VideosService', () => {
   let service: VideosService;
@@ -32,6 +32,6 @@ describe('VideosService', () => {
     });
 
     const request = http.expectOne(environment.videosUrl);
-    request.flush(VIDEOS_FIXTURE);
+    request.flush(DUMMY_VIDEOS);
   });
 });

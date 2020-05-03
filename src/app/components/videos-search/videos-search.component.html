@@ -1,0 +1,24 @@
+<form
+  class="d-flex justify-content-end mb-4"
+  #form="ngForm"
+  (ngSubmit)="onSubmit()"
+>
+  <input
+    class="btn btn-warning"
+    type="reset"
+    value="Reset"
+    *ngIf="form.dirty"
+    (click)="onReset()"
+  />
+  <div class="col-xs-3 mx-2">
+    <input
+      class="form-control"
+      type="text"
+      placeholder="Type here"
+      name="query"
+      [(ngModel)]="query"
+      autofocus
+    />
+  </div>
+  <input class="btn btn-primary" type="submit" value="Find" />
+</form>

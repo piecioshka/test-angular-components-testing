@@ -1,9 +1,9 @@
 import { of } from 'rxjs';
 
-import VIDEOS_FIXTURE from '../../../fixtures/videos.fixture.json';
+import DUMMY_VIDEOS from 'src/dummies/videos.dummy.json';
 
 export class FakeVideosService {
   fetchVideos() {
-    return of(VIDEOS_FIXTURE);
+    return of(DUMMY_VIDEOS);
   }
 }

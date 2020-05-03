@@ -14,9 +14,9 @@
 * [Use Spy][2]
 * [Use Stub][3]
 
-[1]: https://github.com/piecioshka/test-angular-components-testing/blob/master/src/app/components/videos/videos.component.spec.ts#L39
-[2]: https://github.com/piecioshka/test-angular-components-testing/blob/master/src/app/components/videos/videos.component.spec.ts#L45
-[3]: https://github.com/piecioshka/test-angular-components-testing/blob/master/src/app/components/videos/videos.component.spec.ts#L52
+[1]: https://github.com/piecioshka/test-angular-components-testing/blob/master/src/app/components/video-list/video-list.component.spec.ts#L40
+[2]: https://github.com/piecioshka/test-angular-components-testing/blob/master/src/app/components/video-list/video-list.component.spec.ts#L46
+[3]: https://github.com/piecioshka/test-angular-components-testing/blob/master/src/app/components/video-list/video-list.component.spec.ts#L53
 
 ## License
 

@@ -1,33 +1,33 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { FormsModule } from '@angular/forms';
 
 import { of } from 'rxjs';
 
-import { VideosComponent } from './videos.component';
+import DUMMY_VIDEOS from 'src/dummies/videos.dummy.json';
+import { VideoListComponent } from './video-list.component';
 import { FakeVideosService } from 'src/app/services/videos/videos-fake.service';
 import { VideosService } from 'src/app/services/videos/videos.service';
+import { VideosSearchComponent } from 'src/app/components/videos-search/videos-search.component';
+import { VideoComponent } from 'src/app/components/video/video.component';
 
-import VIDEOS_FIXTURE from '../../../fixtures/videos.fixture.json';
-
-describe('VideosComponent', () => {
+describe('VideoListComponent', () => {
   let videosService: VideosService;
-  let component: VideosComponent;
-  let fixture: ComponentFixture<VideosComponent>;
+  let component: VideoListComponent;
+  let fixture: ComponentFixture<VideoListComponent>;
   let $component: HTMLElement;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [VideosComponent],
-      imports: [HttpClientTestingModule],
-      providers: [
-        { provide: VideosService, useClass: FakeVideosService }
-      ]
+      imports: [HttpClientTestingModule, FormsModule],
+      declarations: [VideoListComponent, VideoComponent, VideosSearchComponent],
+      providers: [{ provide: VideosService, useClass: FakeVideosService }],
     }).compileComponents();
   }));
 
   beforeEach(() => {
     videosService = TestBed.get(VideosService);
-    fixture = TestBed.createComponent(VideosComponent);
+    fixture = TestBed.createComponent(VideoListComponent);
     component = fixture.componentInstance;
     $component = fixture.nativeElement;
   });
@@ -51,7 +51,9 @@ describe('VideosComponent', () => {
 
   // Use Stub
   it('should display thumbnails after init', () => {
-    spyOn(videosService, 'fetchVideos').and.returnValue(of(VIDEOS_FIXTURE.splice(0, 5)));
+    spyOn(videosService, 'fetchVideos').and.returnValue(
+      of(DUMMY_VIDEOS.splice(0, 5))
+    );
     fixture.detectChanges(); // ngOnInit
     expect($component.querySelectorAll('.video').length).toEqual(5);
   });

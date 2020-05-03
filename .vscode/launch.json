@@ -17,7 +17,8 @@
         "/src/*": "${webRoot}/*",
         "/*": "*",
         "/./~/*": "${webRoot}/node_modules/*"
-      }
+      },
+      "internalConsoleOptions": "openOnSessionStart"
     },
     {
       "type": "node",
