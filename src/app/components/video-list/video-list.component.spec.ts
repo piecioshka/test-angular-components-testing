@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { of } from 'rxjs';
 
-import DUMMY_VIDEOS from 'src/dummies/videos.dummy.json';
+import FIXTURE_VIDEOS from 'src/fixtures/videos.fixture.json';
 import { VideoListComponent } from './video-list.component';
 import { FakeVideosService } from 'src/app/services/videos/videos-fake.service';
 import { VideosService } from 'src/app/services/videos/videos.service';
@@ -52,7 +52,7 @@ describe('VideoListComponent', () => {
   // Use Stub
   it('should display thumbnails after init', () => {
     spyOn(videosService, 'fetchVideos').and.returnValue(
-      of(DUMMY_VIDEOS.splice(0, 5))
+      of(FIXTURE_VIDEOS.splice(0, 5))
     );
     fixture.detectChanges(); // ngOnInit
     expect($component.querySelectorAll('.video').length).toEqual(5);
