@@ -26,7 +26,7 @@ describe('VideoListComponent', () => {
   }));
 
   beforeEach(() => {
-    videosService = TestBed.get(VideosService);
+    videosService = TestBed.inject(VideosService);
     fixture = TestBed.createComponent(VideoListComponent);
     component = fixture.componentInstance;
     $component = fixture.nativeElement;
