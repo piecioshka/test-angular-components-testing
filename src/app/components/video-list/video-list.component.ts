@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { map, filter } from 'rxjs/operators';
 
 import { VideosService } from 'src/app/services/videos/videos.service';
-import { VideoList } from 'src/app/interfaces/video-list.interface';
+import { Video } from 'src/app/interfaces/video.interface';
 
 @Component({
   selector: 'app-videos',
@@ -12,8 +12,8 @@ import { VideoList } from 'src/app/interfaces/video-list.interface';
   styleUrls: ['./video-list.component.css'],
 })
 export class VideoListComponent implements OnInit {
-  private videos$: Observable<VideoList> = null;
-  displayVideos$: Observable<VideoList> = null;
+  private videos$: Observable<Video[]> = null;
+  displayVideos$: Observable<Video[]> = null;
 
   constructor(private videosService: VideosService) {}
 

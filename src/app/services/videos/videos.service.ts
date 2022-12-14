@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 
-import { VideoList } from 'src/app/interfaces/video-list.interface';
+import { Video } from 'src/app/interfaces/video.interface';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -12,7 +12,7 @@ import { environment } from 'src/environments/environment';
 export class VideosService {
   constructor(private http: HttpClient) {}
 
-  fetchVideos(): Observable<VideoList> {
-    return this.http.get<VideoList>(environment.videosUrl);
+  fetchVideos(): Observable<Video[]> {
+    return this.http.get<Video[]>(environment.videosUrl);
   }
 }
