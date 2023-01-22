@@ -4,7 +4,7 @@
 
 📒 Testing Angular components
 
-## Demo 🎉
+## Preview 🎉
 
 <https://piecioshka.github.io/test-angular-components-testing/>
 
