@@ -1,5 +1,11 @@
 # test-angular-components-testing
 
+<!-- prettier-ignore-start -->
+
+[![github-ci](https://github.com/piecioshka/test-angular-components-testing/actions/workflows/ci.yml/badge.svg)](https://github.com/piecioshka/test-angular-components-testing/actions/workflows/ci.yml)
+
+<!-- prettier-ignore-end -->
+
 ![Testing](https://github.com/piecioshka/test-angular-components-testing/workflows/Testing/badge.svg?branch=master)
 
 📒 Testing Angular components
